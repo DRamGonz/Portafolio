@@ -1,0 +1,9 @@
+{
+  "header": {
+    "translate": "Translate",
+    "inicio": "Home",
+    "curriculum": "Curriculum",
+    "proyecto": "Project",
+    "servicios": "Services"
+  }
+}

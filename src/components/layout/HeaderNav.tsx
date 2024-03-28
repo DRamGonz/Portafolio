@@ -1,53 +1,43 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { LANGUAGES } from "../../constants/lang.ts";
+import React,{useState} from "react";
+import { useTranslation } from 'react-i18next';
 
 const HeaderNav = () => {
-  const { i18n, t } = useTranslation();
 
-  const onChangeLang = (lang_code) => {
-    i18n.changeLanguage(lang_code);
+  const { t, i18n } = useTranslation();
+
+  const [currentLanguage, setCurrentLanguage] = useState('en');
+  const toggleLanguage = () => {
+    const newLanguage = currentLanguage === 'en' ? 'es' : 'en';
+    setCurrentLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
 
   return (
     <div>
       <table>
+       
         <tr>
           <td>
-            <a href="/inicio">Inicio</a>
+          <h1>Diego Ramos</h1>
           </td>
           <td>
-            <a href="/curriculum">Curriculum</a>
+            <a href="/inicio">{t('header.inicio')}</a>
           </td>
           <td>
-            <a href="/portafolio">Portafolio</a>
+            <a href="/curriculum">{t('header.curriculum')}</a>
           </td>
           <td>
-            <a href="/Proyectos">Proyectos</a>
+            <a href="/Proyectos">{t('header.proyecto')}</a>
           </td>
           <td>
-            <a href="/Servicios">Servicios</a>
+            <a href="/Servicios">{t('header.servicios')}</a>
           </td>
         </tr>
+        <button onClick={toggleLanguage}>
+        {t('header.translate')}
+      </button>
       </table>
-      <div>
-        <label>{t("Idiomas")}</label>
-        {LANGUAGES.map(({ code, label, imageSrc }) => (
-          <img
-            key={code}
-            alt={label}
-            src={imageSrc}
-            style={{
-              width: "40px",
-              height: "40px",
-              cursor: "pointer",
-              marginRight: "5px",
-            }}
-            onClick={() => onChangeLang(code)}
-            className={i18n.language === code ? "selected" : ""}
-          />
-        ))}
-      </div>
+     
     </div>
   );
 };

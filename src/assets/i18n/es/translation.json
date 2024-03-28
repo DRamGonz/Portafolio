@@ -1,0 +1,14 @@
+{
+    "header": {
+        "translate": "Traducir",
+        "inicio": "Inicio",
+        "curriculum": "Curriculum",
+        "proyecto": "Proyectos",       
+        "servicios": "Servicios"
+    },
+
+    "inicio": {
+        "has": "Portafolio"
+    }
+
+}

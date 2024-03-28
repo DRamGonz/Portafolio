@@ -1,21 +1,37 @@
-import React from 'react'
+import React from "react";
 import { useTranslation } from "react-i18next";
-import { LANGUAGES } from '../../constants/lang';
 
 const Footer = () => {
-
-  const { i18n, t} = useTranslation ();
-
-  const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang_code = e.target.value;
-    i18n.changeLanguage(lang_code);
-    };
+  const { t } = useTranslation();
 
   return (
-    <div >
-        <h1>Pie de Página.</h1>
+    <div>
+      <tr>
+        <td>
+          <p>© 2024 Mi Portafolio</p>
+        </td>
+        <td>
+          <a href="/contacta">{t("footer.contacta")}</a>
+        </td>
+      </tr>
+      <ul className="social-icons">
+        <li>
+          <a href="https://www.facebook.com/?locale=es_ES/" target="_blank">
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            Instagram
+          </a>
+        </li>
+      </ul>
     </div>
-   
-  )
-}
-export default Footer
+  );
+};
+export default Footer;
