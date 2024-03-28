@@ -6,7 +6,9 @@ function App() {
   return (
     <div >
       <MisRutas />
+      <h1>Prueba</h1>
     </div>
+
     
   );
 }
