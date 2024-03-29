@@ -1,14 +1,51 @@
 {
-    "header": {
-        "translate": "Traducir",
-        "inicio": "Inicio",
-        "curriculum": "Curriculum",
-        "proyecto": "Proyectos",       
-        "servicios": "Servicios"
-    },
+  "header": {
+    "translate": "Traducir",
+    "inicio": "Inicio",
+    "curriculum": "Curriculum",
+    "proyecto": "Proyectos",
+    "servicios": "Servicios"
+  },
 
-    "inicio": {
-        "has": "Portafolio"
-    }
+  "footer": {
+    "copy": "© 2024 Mi Portafolio",
+    "facebook": "Facebook",
+    "twiter": "Twitter",
+    "instagram": "Instagram"
+  },
 
+  "curriculum": {
+    "titulo": "Curriculum:",
+    "parrafo1": "Soy un apasionado aprendiz de programación en constante crecimiento y desarrollo. Poseo una sólida comprensión de los fundamentos de la programación y estoy comprometido a aprender y mejorar continuamente. Mi objetivo es contribuir de manera significativa en un entorno laboral mientras continúo ampliando mis habilidades y conocimientos en el campo del desarrollo web.",
+    "parrafo2": "Educación - Ciclo superior en Desarrollo y Aplicación Web. (2025)",
+    "parrafo3": "Experiencia Laboral - Desarrollador Frontend (Prácticas), Empresa ABC (Verano 2023) - Desarrollé y mantuve componentes de la interfaz de usuario utilizando HTML, CSS y JavaScript. - Colaboré en el diseño e implementación de nuevas funcionalidades para la aplicación web principal. - Participé en reuniones de equipo y contribuí en sesiones de lluvia de ideas para resolver problemas técnicos.",
+    "parrafo4": "Habilidades Técnicas - Lenguajes de programación: Java, JavaScript, HTML, CSS, TypeScript - Frameworks y bibliotecas: React.js, Bootstrap - Herramientas de control de versiones: Git - Conocimientos básicos de bases de datos: MySQL",
+    "parrafo5": "### Proyectos Destacados",
+    "parrafo6": "### Formación Complementaria - Curso en línea de JavaScript en Platzi (2023) - Participación en talleres sobre desarrollo web en conferencias locales y eventos de la comunidad.",
+    "parrafo7": " ### Intereses y Hobbies Aparte de mi interés por la programación y el desarrollo web, disfruto leer libros de tecnología, participar en proyectos de código abierto y practicar deportes al aire libre."
+  },
+
+  "inicio": {
+    "titulo": "Bienvenido a mi Portafolio",
+    "parrafo1": "Soy un aprendiz de programación en constante desarrollo y exploración del mundo del desarrollo Web. Estoy aquí para compartir mis proyectos y mi viaje mientras aprendo y crezco como programador.",
+    "parrafo2": "Ver mi trabajo",
+    "parrafo3": "¿Tienes alguna pregunta o proyecto en mente? ¡Contáctame!",
+    "parrafo4": "Contáctame"
+  },
+
+  "error": {
+    "titulo": "Página de Error."
+  },
+
+  "contacto": {
+    "titulo": "Formulario:"
+  },
+
+  "proyecto": {
+    "titulo": "Proyecto:"
+  },
+
+  "servicios": {
+    "titulo": "Servicios:"
+  }
 }

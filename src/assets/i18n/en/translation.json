@@ -5,5 +5,47 @@
     "curriculum": "Curriculum",
     "proyecto": "Project",
     "servicios": "Services"
+  },
+
+  "footer": {
+    "copy": "© 2024 My Portfolio",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram"
+  },
+
+  "curriculum": {
+    "titulo": "Curriculum:",
+    "parrafo1": "I am a passionate programming learner in constant growth and development. I possess a solid understanding of programming fundamentals and am committed to continuous learning and improvement. My goal is to contribute significantly in a work environment while continuing to expand my skills and knowledge in the field of web development.",
+    "parrafo2": "Education - Higher Cycle in Web Development and Application. (2025)",
+    "parrafo3": "Work Experience - Frontend Developer (Internship), Company ABC (Summer 2023) - Developed and maintained user interface components using HTML, CSS, and JavaScript. - Collaborated in the design and implementation of new features for the main web application. - Participated in team meetings and contributed to brainstorming sessions to solve technical problems.",
+    "parrafo4": "Technical Skills - Programming languages: Java, JavaScript, HTML, CSS, TypeScript - Frameworks and libraries: React.js, Bootstrap - Version control tools: Git - Basic knowledge of databases: MySQL",
+    "parrafo5": "### Featured Projects",
+    "parrafo6": "### Additional Training - JavaScript online course on Platzi (2023) - Participation in web development workshops at local conferences and community events.",
+    "parrafo7": "### Interests and Hobbies Besides my interest in programming and web development, I enjoy reading technology books, participating in open-source projects, and practicing outdoor sports."
+  },
+
+  "inicio": {
+    "titulo": "Welcome to My Portfolio",
+    "parrafo1": "I am a programming apprentice in constant development and exploration of the world of Web development. I'm here to share my projects and my journey as I learn and grow as a programmer.",
+    "parrafo2": "View My Work",
+    "parrafo3": "Do you have any questions or projects in mind? Contact me!",
+    "parrafo4": "Contact Me"
+  },
+
+  "error": {
+    "titulo": "Error Page."
+  },
+
+  "contacto": {
+    "titulo": "Contact Form:"
+  },
+
+  "proyecto": {
+    "titulo": "Project:"
+  },
+
+  "servicios": {
+    "titulo": "Services:"
   }
 }
