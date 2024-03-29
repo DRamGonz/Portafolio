@@ -6,8 +6,7 @@ const HeaderNav = () => {
   const { t, i18n } = useTranslation();
 
   const [currentLanguage, setCurrentLanguage] = useState('en');
-  const toggleLanguage = () => {
-    const newLanguage = currentLanguage === 'en' ? 'es' : 'en';
+  const toggleLanguage = (newLanguage) => {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
@@ -33,9 +32,32 @@ const HeaderNav = () => {
             <a href="/Servicios">{t('header.servicios')}</a>
           </td>
         </tr>
-        <button onClick={toggleLanguage}>
-        {t('header.translate')}
-      </button>
+        <div>
+        <label>{t("Idiomas")}</label>
+        <img
+          src={require("../../assets/ico_Es.png")}
+          alt="Spanish"
+          style={{
+            width: "40px",
+            height: "40px",
+            cursor: "pointer",
+            marginRight: "5px",
+          }}
+          onClick={() => toggleLanguage('es')}
+          className={currentLanguage === 'es' ? "selected" : ""}
+        />
+        <img
+          src={require("../../assets/ico_En.png")}
+          alt="English"
+          style={{
+            width: "40px",
+            height: "40px",
+            cursor: "pointer",
+          }}
+          onClick={() => toggleLanguage('en')}
+          className={currentLanguage === 'en' ? "selected" : ""}
+        />
+      </div>
       </table>
      
     </div>
