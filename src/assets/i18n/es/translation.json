@@ -9,6 +9,7 @@
 
   "footer": {
     "copy": "© 2024 Mi Portafolio",
+    "contacta": "Contacto",
     "facebook": "Facebook",
     "twiter": "Twitter",
     "instagram": "Instagram"
@@ -37,15 +38,20 @@
     "titulo": "Página de Error."
   },
 
-  "contacto": {
-    "titulo": "Formulario:"
-  },
-
   "proyecto": {
     "titulo": "Proyecto:"
   },
 
   "servicios": {
     "titulo": "Servicios:"
-  }
+  },
+
+  "contacto": {
+    "titulo": "Mediante este formulario podrá realizar la consulta que desee:",
+    "nombre_apellido": "Nombre y apellido: ",
+    "correo": "Correo electrónico: ",
+    "asunto": "Asunto: ",
+    "mensaje": "Mensaje: ",
+    "enviar": "Enviar"
+    }
 }

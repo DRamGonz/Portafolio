@@ -11,7 +11,7 @@ const Footer = () => {
           <p>{t('footer.copy')}</p>
         </td>
         <td>
-          <a href="/contacta">{t("footer.contacta")}</a>
+          <a href="/contacto">{t("footer.contacta")}</a>
         </td>
       </tr>
       <ul className="social-icons">

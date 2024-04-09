@@ -9,6 +9,7 @@
 
   "footer": {
     "copy": "© 2024 My Portfolio",
+    "contacta": "Contact",
     "facebook": "Facebook",
     "twitter": "Twitter",
     "instagram": "Instagram"
@@ -37,15 +38,20 @@
     "titulo": "Error Page."
   },
 
-  "contacto": {
-    "titulo": "Contact Form:"
-  },
-
   "proyecto": {
     "titulo": "Project:"
   },
 
   "servicios": {
     "titulo": "Services:"
+  },
+
+  "contacto": {
+    "titulo": "Through this form you can make the query you want:",
+    "nombre_apellido": "Name and surname: ",
+    "correo": "Email: ",
+    "asunto": "Subject: ",
+    "mensaje": "Message: ",
+    "enviar": "Send"
   }
 }
