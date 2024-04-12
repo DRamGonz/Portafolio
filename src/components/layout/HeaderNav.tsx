@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const HeaderNav = () => {
+  // Accede a las funciones de traducción y al estado del idioma actual desde react-i18next
   const { t, i18n } = useTranslation();
 
+  // Variable de estado para almacenar el idioma seleccionado actualmente
   const [currentLanguage, setCurrentLanguage] = useState("en");
+  // Función para cambiar el idioma
   const toggleLanguage = (newLanguage) => {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
 
+  // Estilos para las imágenes de los iconos de idioma - Que sera sustituido por CSS
   const estiloIconos = {
     width: "40px",
     height: "40px",
@@ -36,26 +40,26 @@ const HeaderNav = () => {
             <td>
               <a href="/Servicios">{t("header.servicios")}</a>
             </td>
-          <td>
-          <div>
-            <span>{t("Idiomas")}</span>
-            <img
-              style={estiloIconos}
-              src={require("../../assets/ico_Es.png")}
-              alt="Spanish"
-              onClick={() => toggleLanguage("es")}
-              className={currentLanguage === "es" ? "selected" : ""}
-            />
-            <img
-              style={estiloIconos}
-              src={require("../../assets/ico_En.png")}
-              alt="English"
-              onClick={() => toggleLanguage("en")}
-              className={currentLanguage === "en" ? "selected" : ""}
-            />
-          </div>
-        </td>
-        </tr>
+            <td>
+              <div>
+                <span>{t("Idiomas")}</span>
+                <img
+                  style={estiloIconos}
+                  src={require("../../assets/ico_Es.png")}
+                  alt="Spanish"
+                  onClick={() => toggleLanguage("es")}
+                  className={currentLanguage === "es" ? "selected" : ""}
+                />
+                <img
+                  style={estiloIconos}
+                  src={require("../../assets/ico_En.png")}
+                  alt="English"
+                  onClick={() => toggleLanguage("en")}
+                  className={currentLanguage === "en" ? "selected" : ""}
+                />
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>

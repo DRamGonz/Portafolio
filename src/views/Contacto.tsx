@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const Contacto = () => {
+  // Accede a las funciones de traducción y al estado del idioma actual desde react-i18next
   const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
@@ -10,6 +11,8 @@ export const Contacto = () => {
     subject: "",
     message: "",
   });
+
+  const inputNameRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,7 +32,21 @@ export const Contacto = () => {
         "contacto.mensaje"
       )} ${message}`
     );
+    // Limpia el formulario después del envío
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
+
+  //Foco en el imput
+  useEffect(() => {
+    if (inputNameRef.current) {
+      inputNameRef.current.focus();
+    }
+  }, []);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -37,6 +54,7 @@ export const Contacto = () => {
       <div>
         <label htmlFor="name">{t("contacto.nombre_apellido")}</label>
         <input
+          ref={inputNameRef} // Aquí se asigna la referencia al input para el efecto del focus.
           type="text"
           id="name"
           name="name"

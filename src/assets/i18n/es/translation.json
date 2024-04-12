@@ -12,7 +12,9 @@
     "contacta": "Contacto",
     "facebook": "Facebook",
     "twiter": "Twitter",
-    "instagram": "Instagram"
+    "instagram": "Instagram",
+    "contador1": "La página ha sido visitada ",
+    "contador2": " veces."
   },
 
   "curriculum": {
