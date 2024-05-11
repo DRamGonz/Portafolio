@@ -4,14 +4,21 @@
     "inicio": "Inicio",
     "curriculum": "Curriculum",
     "proyecto": "Proyectos",
-    "servicios": "Servicios"
+    "servicios": "Servicios",
+    "idiomas": "Idioma:"
   },
 
   "footer": {
+    "mapa_sitio": "Mapa sitio Web:",
+    "redes_sociales": "Redes Soaciales:",
     "copy": "© 2024 Mi Portafolio",
-    "contacta": "Contacto",
+    "contacto": "Contacto",
+    "iniciof": "Inicio",
+    "curriculum": "Curriculum",
+    "proyectos": "Proyectos",
+    "servicios": "Servicios",
     "facebook": "Facebook",
-    "twiter": "Twitter",
+    "twitter": "Twitter",
     "instagram": "Instagram",
     "contador1": "La página ha sido visitada ",
     "contador2": " veces."
@@ -40,12 +47,37 @@
     "titulo": "Página de Error."
   },
 
-  "proyecto": {
-    "titulo": "Proyecto:"
+  "proyectos": {
+    "titulo": "Proyectos",
+    "Ver_mas": "Ver más",
+    "proyecto1": {
+      "titulo": "Plataforma de Aprendizaje en Línea",
+      "descripcion": "Desarrollo de una plataforma de aprendizaje en línea que permite a los usuarios acceder a cursos, conferencias y recursos educativos desde cualquier lugar. La plataforma ofrece una amplia gama de temas y cuenta con funciones interactivas para mejorar la experiencia de aprendizaje."
+    },
+    "proyecto2": {
+      "titulo": "Aplicación de Gestión de Tareas",
+      "descripcion": "Creación de una aplicación de gestión de tareas que ayuda a los usuarios a organizar sus actividades diarias, establecer recordatorios y compartir listas de tareas con colegas y amigos. La aplicación incluye funciones de seguimiento del progreso y notificaciones personalizadas."
+    },
+    "proyecto3": {
+      "titulo": "Plataforma de Reservas de Viajes",
+      "descripcion": "Diseño y desarrollo de una plataforma de reservas de viajes que permite a los usuarios buscar y reservar vuelos, hoteles y actividades turísticas de manera fácil y segura. La plataforma ofrece recomendaciones personalizadas y opciones de pago flexibles."
+    }
   },
 
   "servicios": {
-    "titulo": "Servicios:"
+    "titulo": "Servicios:",
+    "servicio1": {
+      "titulo": "Copas de seguridad",
+      "descripcion": "¿Te preocupa perder tus archivos importantes? ¡No te preocupes más! Con nuestro servicio de copia de seguridad, puedes mantener tus datos seguros y protegidos en todo momento. ✔️ Respaldos automáticos: Olvídate de realizar copias manuales. Nuestra solución realiza respaldos automáticos de tus archivos de forma regular para garantizar que siempre tengas la última versión disponible. ✔️ Almacenamiento seguro: Tus datos se almacenan en servidores seguros y protegidos, con múltiples capas de cifrado para garantizar la privacidad y confidencialidad de tus archivos. ✔️ Acceso en cualquier momento y lugar: Accede a tus copias de seguridad desde cualquier dispositivo y en cualquier lugar. Ya sea que estés en la oficina, en casa o en movimiento, tus archivos estarán siempre a tu alcance. No arriesgues la pérdida de tus datos importantes. ¡Asegura tu tranquilidad con nuestro servicio de copia de seguridad hoy mismo!"
+    },
+    "servicio2": {
+      "titulo": "Auditoría:",
+      "descripcion": "¿Quieres asegurarte de que tu empresa esté en cumplimiento y sea financieramente sólida? ¡Nuestra auditoría es la solución! 🔍 En un mundo empresarial cada vez más complejo y regulado, la auditoría se ha vuelto esencial para garantizar la transparencia, la integridad y el éxito a largo plazo de tu negocio. ✔️ Evaluación exhaustiva: Nuestros expertos llevan a cabo una evaluación detallada de tus estados financieros, procesos internos y controles, identificando posibles riesgos y oportunidades de mejora. ✔️ Cumplimiento normativo: Mantente al día con las regulaciones y normativas locales e internacionales relevantes. Nuestros auditores te ayudarán a cumplir con todos los requisitos legales y fiscales aplicables. ✔️ Recomendaciones personalizadas: No solo identificamos problemas, sino que también ofrecemos recomendaciones personalizadas para fortalecer tus prácticas comerciales y optimizar tu rendimiento financiero. Confía en nosotros para proporcionarte una visión clara y objetiva de la salud financiera de tu empresa. ¡Descubre cómo nuestra auditoría puede llevar tu negocio al siguiente nivel!"
+    },
+    "servicio3": {
+      "titulo": "Optimización de Infraestructura Tecnológica:",
+      "descripcion": "¿Tu empresa está buscando mejorar su rendimiento tecnológico y reducir costos? Nuestro servicio de optimización de infraestructura tecnológica está diseñado para ayudarte a alcanzar tus metas. ✔️ Evaluación exhaustiva: Realizamos un análisis completo de tu infraestructura tecnológica actual, identificando áreas de mejora y oportunidades para optimizar recursos y procesos. ✔️ Diseño de soluciones personalizadas: Desarrollamos soluciones adaptadas a las necesidades específicas de tu empresa, desde la actualización de hardware y software hasta la implementación de sistemas de gestión eficientes. ✔️ Implementación y seguimiento: Nos encargamos de la implementación de las soluciones propuestas y proporcionamos un seguimiento continuo para garantizar que tu infraestructura tecnológica opere de manera óptima a largo plazo. Haz que tu empresa esté lista para el futuro con una infraestructura tecnológica eficiente y adaptable. ¡Descubre cómo nuestro servicio de optimización puede impulsar tu negocio hacia el éxito!"
+    }
   },
 
   "contacto": {
@@ -55,5 +87,5 @@
     "asunto": "Asunto: ",
     "mensaje": "Mensaje: ",
     "enviar": "Enviar"
-    }
+  }
 }

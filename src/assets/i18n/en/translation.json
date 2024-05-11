@@ -4,17 +4,25 @@
     "inicio": "Home",
     "curriculum": "Curriculum",
     "proyecto": "Project",
-    "servicios": "Services"
+    "servicios": "Services",
+    "idiomas": "Language:"
   },
 
   "footer": {
+    "mapa_sitio": "Website Map:",
+    "redes_sociales": "Social Media:",
     "copy": "© 2024 My Portfolio",
-    "contacta": "Contact",
+    "contacto": "Contact",
+    "iniciof": "Home",
+    "curriculum": "Curriculum",
+    "proyectos": "Projects",
+    "servicios": "Services",
     "facebook": "Facebook",
     "twitter": "Twitter",
     "instagram": "Instagram",
     "contador1": "The page has been visited ",
     "contador2": " times."
+  
   },
 
   "curriculum": {
@@ -40,13 +48,39 @@
     "titulo": "Error Page."
   },
 
-  "proyecto": {
-    "titulo": "Project:"
-  },
+  
+  "proyectos": {
+    "titulo": "Projects",
+    "Ver_mas": "See more",
+    "proyecto1": {
+      "titulo": "Online Learning Platform",
+      "descripcion": "Development of an online learning platform that allows users to access courses, conferences, and educational resources from anywhere. The platform offers a wide range of topics and features interactive functions to enhance the learning experience."
+    },
+    "proyecto2": {
+      "titulo": "Task Management Application",
+      "descripcion": "Creation of a task management application that helps users organize their daily activities, set reminders, and share task lists with colleagues and friends. The application includes progress tracking features and personalized notifications."
+    },
+    "proyecto3": {
+      "titulo": "Travel Booking Platform",
+      "descripcion": "Design and development of a travel booking platform that allows users to search and book flights, hotels, and tourist activities easily and securely. The platform offers personalized recommendations and flexible payment options."
+      }
+    },
 
   "servicios": {
-    "titulo": "Services:"
-  },
+    "titulo": "Services:",
+    "servicio1": {
+      "titulo": "Backup Services",
+      "descripcion": "Worried about losing your important files? Worry no more! With our backup service, you can keep your data safe and secure at all times. ✔️ Automatic backups: Forget about manual backups. Our solution automatically backs up your files regularly to ensure you always have the latest version available. ✔️ Secure storage: Your data is stored on secure and protected servers, with multiple layers of encryption to ensure the privacy and confidentiality of your files. ✔️ Anytime, anywhere access: Access your backups from any device and anywhere. Whether you're in the office, at home, or on the go, your files will always be within reach. Don't risk losing your important data. Ensure your peace of mind with our backup service today!"
+    },
+    "servicio2": {
+      "titulo": "Audit:",
+      "descripcion": "Want to ensure that your company is compliant and financially sound? Our audit is the solution! 🔍 In an increasingly complex and regulated business world, auditing has become essential to ensure transparency, integrity, and long-term success for your business. ✔️ Comprehensive evaluation: Our experts conduct a detailed assessment of your financial statements, internal processes, and controls, identifying potential risks and opportunities for improvement. ✔️ Regulatory compliance: Stay up-to-date with relevant local and international regulations and standards. Our auditors will help you comply with all applicable legal and tax requirements. ✔️ Personalized recommendations: We not only identify issues but also offer personalized recommendations to strengthen your business practices and optimize your financial performance. Trust us to provide you with a clear and objective view of your company's financial health. Discover how our audit can take your business to the next level!"
+    },
+    "servicio3": {
+      "titulo": "Technological Infrastructure Optimization:",
+      "descripcion": "Is your company looking to enhance its technological performance and reduce costs? Our technological infrastructure optimization service is designed to help you achieve your goals. ✔️ Comprehensive assessment: We conduct a thorough analysis of your current technological infrastructure, identifying areas for improvement and opportunities to optimize resources and processes. ✔️ Customized solutions design: We develop solutions tailored to the specific needs of your company, from hardware and software upgrades to the implementation of efficient management systems. ✔️ Implementation and monitoring: We take care of implementing the proposed solutions and provide ongoing monitoring to ensure that your technological infrastructure operates optimally in the long term. Get your company ready for the future with an efficient and adaptable technological infrastructure. Discover how our optimization service can drive your business towards success!"
+    }
+},
 
   "contacto": {
     "titulo": "Through this form you can make the query you want:",

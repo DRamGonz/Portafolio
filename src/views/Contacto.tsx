@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const Contacto = () => {
-  // Accede a las funciones de traducción y al estado del idioma actual desde react-i18next
   const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
@@ -21,18 +20,17 @@ export const Contacto = () => {
       [name]: value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí agregaria la lógica para enviar el formulario
     const { name, email, subject, message } = formData;
     alert(
-      `${t("contacto.nombre_apellido")} ${name}\n${t(
+      `${t("contacto.nombre_apellido")}: ${name}\n${t(
         "contacto.correo"
-      )} ${email}\n${t("contacto.asunto")} ${subject}\n${t(
+      )}: ${email}\n${t("contacto.asunto")}: ${subject}\n${t(
         "contacto.mensaje"
-      )} ${message}`
+      )}: ${message}`
     );
-    // Limpia el formulario después del envío
     setFormData({
       name: "",
       email: "",
@@ -41,7 +39,6 @@ export const Contacto = () => {
     });
   };
 
-  //Foco en el imput
   useEffect(() => {
     if (inputNameRef.current) {
       inputNameRef.current.focus();
@@ -49,22 +46,24 @@ export const Contacto = () => {
   }, []);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>{t("contacto.titulo")}</h1>
-      <div>
-        <label htmlFor="name">{t("contacto.nombre_apellido")}</label>
+    <div className="container px-4 py-8 w-4/5 mx-auto flex-col justify-center items-center">
+    <form onSubmit={handleSubmit} className="bg-blue-100  container mx-auto px-4 py-8 bg-blue-100 shadow-lg rounded-lg">
+      <h1 className="text-2xl font-bold mb-4">{t("contacto.titulo")}</h1>
+      <div className="mb-4">
+        <label htmlFor="name" className="block mb-3">{t("contacto.nombre_apellido")}</label>
         <input
-          ref={inputNameRef} // Aquí se asigna la referencia al input para el efecto del focus.
+          ref={inputNameRef}
           type="text"
           id="name"
           name="name"
           value={formData.name}
           onChange={handleChange}
           required
+          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="email">{t("contacto.correo")}</label>
+      <div className="mb-4">
+        <label htmlFor="email" className="block mb-2">{t("contacto.correo")}</label>
         <input
           type="email"
           id="email"
@@ -72,10 +71,11 @@ export const Contacto = () => {
           value={formData.email}
           onChange={handleChange}
           required
+          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="subject">{t("contacto.asunto")}</label>
+      <div className="mb-4">
+        <label htmlFor="subject" className="block mb-2">{t("contacto.asunto")}</label>
         <input
           type="text"
           id="subject"
@@ -83,20 +83,24 @@ export const Contacto = () => {
           value={formData.subject}
           onChange={handleChange}
           required
+          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="message">{t("contacto.mensaje")}</label>
+      <div className="mb-6">
+        <label htmlFor="message" className="block mb-2">{t("contacto.mensaje")}</label>
         <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
           required
+          rows={4}
+          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
         />
       </div>
-      <button type="submit">{t("contacto.enviar")}</button>
+      <button type="submit" className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:bg-blue-700">{t("contacto.enviar")}</button>
     </form>
+    </div>
   );
 };
 

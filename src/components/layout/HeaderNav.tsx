@@ -1,67 +1,45 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import '../../css/styles.css';
 
 const HeaderNav = () => {
-  // Accede a las funciones de traducción y al estado del idioma actual desde react-i18next
   const { t, i18n } = useTranslation();
 
-  // Variable de estado para almacenar el idioma seleccionado actualmente
   const [currentLanguage, setCurrentLanguage] = useState("en");
-  // Función para cambiar el idioma
+
   const toggleLanguage = (newLanguage) => {
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
   };
 
-  // Estilos para las imágenes de los iconos de idioma - Que sera sustituido por CSS
-  const estiloIconos = {
-    width: "40px",
-    height: "40px",
-    cursor: "pointer",
-  };
-
   return (
     <div>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <h1>Diego Ramos</h1>
-            </td>
-            <td>
-              <a href="/inicio">{t("header.inicio")}</a>
-            </td>
-            <td>
-              <a href="/curriculum">{t("header.curriculum")}</a>
-            </td>
-            <td>
-              <a href="/Proyectos">{t("header.proyecto")}</a>
-            </td>
-            <td>
-              <a href="/Servicios">{t("header.servicios")}</a>
-            </td>
-            <td>
-              <div>
-                <span>{t("Idiomas")}</span>
-                <img
-                  style={estiloIconos}
-                  src={require("../../assets/ico_Es.png")}
-                  alt="Spanish"
-                  onClick={() => toggleLanguage("es")}
-                  className={currentLanguage === "es" ? "selected" : ""}
-                />
-                <img
-                  style={estiloIconos}
-                  src={require("../../assets/ico_En.png")}
-                  alt="English"
-                  onClick={() => toggleLanguage("en")}
-                  className={currentLanguage === "en" ? "selected" : ""}
-                />
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="bg-blue-100 p-4 shadow-lg border-b-2 border-black">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold text-blue-800"><i>Diego Ramos González</i></h1>
+          <nav className="flex space-x-4">
+            <a href="/inicio" className="text-gray-800 hover:text-blue-800">{t("header.inicio")}</a>
+            <a href="/curriculum" className="text-gray-800 hover:text-blue-800">{t("header.curriculum")}</a>
+            <a href="/proyectos" className="text-gray-800 hover:text-blue-800">{t("header.proyecto")}</a>
+            <a href="/servicios" className="text-gray-800 hover:text-blue-800">{t("header.servicios")}</a>
+          </nav>
+          <div className="flex items-center">
+            <span className="mr-2">{t("header.idiomas")}</span>
+            <img
+              src={require("../../assets/ico_Es.png")}
+              alt="Spanish"
+              onClick={() => toggleLanguage("es")}
+              className={`w-8 h-8 cursor-pointer ${currentLanguage === "es" ? "border-2 border-blue-800" : ""}`}
+            />
+            <img
+              src={require("../../assets/ico_En.png")}
+              alt="English"
+              onClick={() => toggleLanguage("en")}
+              className={`w-8 h-8 ml-2 cursor-pointer ${currentLanguage === "en" ? "border-2 border-blue-800" : ""}`}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
