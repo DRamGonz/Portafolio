@@ -5,7 +5,9 @@
     "curriculum": "Curriculum",
     "proyecto": "Proyectos",
     "servicios": "Servicios",
-    "idiomas": "Idioma:"
+    "idiomas": "Idioma:",
+    "contacto": "Contacto",
+    "error": "Error"
   },
 
   "footer": {
@@ -44,7 +46,8 @@
   },
 
   "error": {
-    "titulo": "Página de Error."
+    "titulo": "Página de Error.",
+    "parrafo": "Oops, parece que la página que buscas no está disponible en este momento. Te recomendamos regresar a la página anterior o utilizar una de estas opciones:"
   },
 
   "proyectos": {

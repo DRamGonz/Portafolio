@@ -1,24 +1,62 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import '../css/styles.css';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import "../css/styles.css";
 
 export const Inicio = () => {
   const { t } = useTranslation();
 
   return (
     <div className="container mx-auto px-4 py-8 bg-blue-100 shadow-lg rounded-lg">
-      <h1 className="text-4xl font-bold mb-6 text-center text-blue-800">{t('inicio.titulo')}</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center text-blue-800">
+        {t("inicio.titulo")}
+      </h1>
       <img
         className="w-48 h-48 rounded-full mx-auto mb-6 shadow-md"
         alt="Avatar"
         src={require("../assets/Avatar.jpeg")}
       />
       <div className="w-3/5 mx-auto flex flex-col justify-center items-center">
-        <p className="text-lg mb-6 text-justify text-gray-800">{t('inicio.parrafo1')}</p>
-        <a href="/curriculum" className="btn bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded text-center mb-6">
-          {t('inicio.parrafo2')}
+        <p className="text-lg mb-6 text-justify text-gray-800">
+          {t("inicio.parrafo1")}
+        </p>
+        <a
+          href="/curriculum"
+          className="btn bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded text-center mb-6"
+        >
+          {t("inicio.parrafo2")}
         </a>
-        <p className="text-lg mt-4 text-justify text-gray-800">{t('inicio.parrafo3')}</p>
+        <p className="text-lg mt-4 text-justify text-gray-800">
+          {t("inicio.parrafo3")}
+        </p>
+      </div>
+      <div className="Imagenes">
+        <div className="icon-container">
+          <img
+            className="icon"
+            alt="Image1"
+            src={require("../assets/Programas/css.png")}
+          />
+          <img
+            className="icon"
+            alt="Image2"
+            src={require("../assets/Programas/html.png")}
+          />
+          <img
+            className="icon"
+            alt="Image3"
+            src={require("../assets/Programas/js.png")}
+          />
+          <img
+            className="icon"
+            alt="Image4"
+            src={require("../assets/Programas/java.png")}
+          />
+          <img
+            className="icon"
+            alt="Image4"
+            src={require("../assets/Programas/sql.png")}
+          />
+        </div>
       </div>
     </div>
   );

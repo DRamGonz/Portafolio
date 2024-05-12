@@ -54,20 +54,20 @@ const Footer = () => {
         {/* Columna 2: Redes sociales */}
         <div className="text-gray-800">
           <h4 className="font-bold mb-2">{t("footer.redes_sociales")}</h4>
-          <ul className="font-bold mb-2">
+          <ul className="font-bold mb-4">
             <li>
               <a href="https://www.facebook.com/?locale=es_ES/" target="_blank" className="hover:text-blue-800">
-                {t("footer.facebook")}
+              <img className="ImagenFooter" src={require("../../assets/Redes/facebook.png") } alt="Facebook"/> 
               </a>
             </li>
             <li>
               <a href="https://twitter.com/" target="_blank" className="hover:text-blue-800">
-                {t("footer.twitter")}
+              <img className="ImagenFooter" src={require("../../assets/Redes/gorjeo.png") } alt="Twitter"/>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/" target="_blank" className="hover:text-blue-800">
-                {t("footer.instagram")}
+              <img className="ImagenFooter" src={require("../../assets/Redes/github.png") } alt="GitHub"/>
               </a>
             </li>
           </ul>

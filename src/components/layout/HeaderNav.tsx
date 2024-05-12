@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import '../../css/styles.css';
+import { NavLink } from "react-router-dom";
 
 const HeaderNav = () => {
   const { t, i18n } = useTranslation();
@@ -18,10 +19,12 @@ const HeaderNav = () => {
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold text-blue-800"><i>Diego Ramos González</i></h1>
           <nav className="flex space-x-4">
-            <a href="/inicio" className="text-gray-800 hover:text-blue-800">{t("header.inicio")}</a>
-            <a href="/curriculum" className="text-gray-800 hover:text-blue-800">{t("header.curriculum")}</a>
-            <a href="/proyectos" className="text-gray-800 hover:text-blue-800">{t("header.proyecto")}</a>
-            <a href="/servicios" className="text-gray-800 hover:text-blue-800">{t("header.servicios")}</a>
+          <NavLink to="/inicio" className="text-gray-800 hover:text-blue-800 font-bold text-xl">{t("header.inicio")}</NavLink>
+            <NavLink to="/curriculum" className="text-gray-800 hover:text-blue-800 font-bold text-xl">{t("header.curriculum")}</NavLink>
+            <NavLink to="/proyectos" className="text-gray-800 hover:text-blue-800 font-bold text-xl">{t("header.proyecto")}</NavLink>
+            <NavLink to="/servicios" className="text-gray-800 hover:text-blue-800 font-bold text-xl">{t("header.servicios")}</NavLink>
+            <NavLink to="/contacto" className="text-gray-800 hover:text-blue-800 font-bold text-xl">{t("header.contacto")}</NavLink>
+            <NavLink to="/Error404" className="text-gray-800 hover:text-blue-800 font-bold text-xl">{t("header.error")}</NavLink>
           </nav>
           <div className="flex items-center">
             <span className="mr-2">{t("header.idiomas")}</span>

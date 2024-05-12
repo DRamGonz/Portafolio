@@ -5,7 +5,9 @@
     "curriculum": "Curriculum",
     "proyecto": "Project",
     "servicios": "Services",
-    "idiomas": "Language:"
+    "idiomas": "Language:",
+    "contacto": "Contact",
+    "error": "Error"
   },
 
   "footer": {

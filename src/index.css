@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  background-color: rgb(219 234 254);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%; /* Ajusta el espacio desde el div superior */
+}
+
+.icon {
+  width: 3%; /* Ajusta el ancho según tu preferencia */
+  height: auto; /* Se ajustará automáticamente manteniendo la proporción */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-right: 9%; /* Ajusta el espacio entre las imágenes */
+  margin-left: 9%;
+}
+
+.ImagenFooter {
+  width: 7%; 
+  height: 7%;
+  padding: 1%;
+}
